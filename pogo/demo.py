@@ -201,7 +201,6 @@ def findClosestFort(session):
     logging.info("Finding Nearest Fort:")
     for fort in sortCloseForts(session):
         if(fort.cooldown_complete_timestamp_ms > int(time.time()*1000)):
-            print(fort.cooldown_complete_timestamp_ms, "COOLDOWNEND")
             continue
         return fort
     return sortCloseForts(session)[0]
@@ -304,7 +303,7 @@ def cleanPokemon(session, thresholdCP=50):
 
 
 def cleanInventory(session):
-    logging.info("Cleaning out Inventory...")
+    recycled = 0
     bag = session.checkInventory().bag
 
     # Clear out all of a crtain type
@@ -312,6 +311,7 @@ def cleanInventory(session):
     for toss in tossable:
         if toss in bag and bag[toss]:
             session.recycleItem(toss, bag[toss])
+            recycled+=1
 
     # Limit a certain type
     limited = {
@@ -323,6 +323,8 @@ def cleanInventory(session):
     for limit in limited:
         if limit in bag and bag[limit] > limited[limit]:
             session.recycleItem(limit, bag[limit] - limited[limit])
+            recycled+=1
+    logging.info("Cleaned out Inventory, "+str(recycled)+" items recycled.")
 
 def getPokesByID(party, id):
     ret = []
