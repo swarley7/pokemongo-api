@@ -324,8 +324,7 @@ def cleanInventory(session):
         if limit in bag and bag[limit] > limited[limit]:
             session.recycleItem(limit, bag[limit] - limited[limit])
 
-def getPokesByID(session, id):
-    party = session.getInventory().party
+def getPokesByID(party, id):
     ret = []
     for poke in party:
         if poke.pokemon_id == id:
@@ -333,13 +332,14 @@ def getPokesByID(session, id):
     return ret
 
 def cleanAllPokes(session):
+    logging.info("Cleaning out Pokes...")
     party = session.checkInventory().party
     keepers = [pokedex.VAPOREON, pokedex.EEVEE, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
     # group
-    for poke in pokedex:
+    for poke in range(0,151):
         if poke in keepers:
             continue
-        pokz = getPokesByID(session, poke)
+        pokz = getPokesByID(party, poke)
         if len(pokz) == 0:
             continue
         # order by cp
