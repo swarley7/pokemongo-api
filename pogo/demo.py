@@ -377,15 +377,27 @@ def cleanPokes(session, pokemon_id):
 
 #cam bot :D
 def camBot(session):
+    cooldown = 10
     while True:
-        cleanAllPokes(session)
-        pokies = findNearPokemon(session)
-        for pokemon in pokies:
-            walkAndCatch(session, pokemon)
-            cleanPokes(session, pokemon.pokemon_data.pokemon_id)
-        fort = findClosestFort(session)
-        walkAndSpin(session, fort)
-        cleanInventory(session)
+        try:
+            cleanAllPokes(session)
+            pokies = findNearPokemon(session)
+            for pokemon in pokies:
+                walkAndCatch(session, pokemon)
+                cleanPokes(session, pokemon.pokemon_data.pokemon_id)
+            fort = findClosestFort(session)
+            walkAndSpin(session, fort)
+            cleanInventory(session)
+        # Catch problems and reauthenticate
+        except GeneralPogoException as e:
+            logging.critical('GeneralPogoException raised: %s', e)
+            session = poko_session.reauthenticate(session)
+            time.sleep(cooldown)
+
+        except Exception as e:
+            logging.critical('Exception raised: %s', e)
+            session = poko_session.reauthenticate(session)
+            time.sleep(cooldown)
 
 
 # Basic bot
