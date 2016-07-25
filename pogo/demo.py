@@ -359,7 +359,7 @@ def cleanPokes(session, pokemon_id):
     poke = pokemon_id
     if poke in keepers:
         return
-    pokz = getPokesByID(session, poke)
+    pokz = getPokesByID(party, poke)
     if len(pokz) == 0:
         return
     # order by cp
