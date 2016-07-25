@@ -492,7 +492,9 @@ class PogoSession(object):
             olatitude,
             olongitude
         )
-
+        # don't divide by zero, bad stuff happens
+        if dist == 0:
+            return
         divisions = dist/speed
         dlat = (latitude - olatitude)/divisions
         dlon = (longitude - olongitude)/divisions
