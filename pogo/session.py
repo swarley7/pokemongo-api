@@ -474,37 +474,35 @@ class PogoSession(object):
     # These act as more logical functions.
     # Might be better to break out seperately
     # Walk over to position in meters
-    def walkTo(self, olatitude, olongitude, epsilon=10, step=7.5):
-        if step >= epsilon:
-            raise GeneralPogoException("Walk may never converge")
+    '''
+    def walkTo(self, olat, olon, speed):
+        #speed in km/h
+        lat,lon, _ = self.getCoordinates()
+        dist = Location.getDistance(lat,lon,olat,olon)
 
+    '''
+    #speed in m/s
+    def walkTo(self, olatitude, olongitude):
+        speed = 22 #approx 80km/h
         # Calculate distance to position
         latitude, longitude, _ = self.getCoordinates()
-        dist = closest = Location.getDistance(
+        dist = Location.getDistance(
             latitude,
             longitude,
             olatitude,
             olongitude
         )
 
-        # Run walk
-        divisions = closest / step
-        dLat = (latitude - olatitude) / divisions
-        dLon = (longitude - olongitude) / divisions
+        divisions = dist/speed
+        dlat = (latitude - olatitude)/divisions
+        dlon = (longitude - olongitude)/divisions
 
-        logging.info("Walking %f meters. This will take %f seconds..." % (dist, dist / step))
-        while dist > epsilon:
-            logging.debug("%f m -> %f m away", closest - dist, closest)
-            latitude -= dLat
-            longitude -= dLon
-            self.setCoordinates(
-                latitude,
-                longitude
-            )
+        while dist > speed:
+            latitude-=dlat
+            longitude-=dlon
+            self.setCoordinates(latitude, longitude)
             time.sleep(1)
-            dist = Location.getDistance(
-                latitude,
-                longitude,
-                olatitude,
-                olongitude
-            )
+            dist = Location.getDistance(latitude, longitude, olatitude, olongitude)
+        #final move
+        self.setCoordinates(olatitude, olongitude)
+

@@ -3,6 +3,8 @@ import argparse
 import logging
 import time
 import sys
+import itertools
+
 from custom_exceptions import GeneralPogoException
 
 from api import PokeAuthSession
@@ -74,6 +76,17 @@ def findBestPokemon(session):
                 closest = dist
     return pokemonBest
 
+def findNearPokemon(session):
+    cells = session.getMapObjects()
+    pokemons = []
+    for cell in cells.map_cells:
+        pokemons += [p for p in cell.wild_pokemons]
+    return pokemons
+
+def showNearPokemon(session):
+    pokemons = findNearPokemon(session)
+    for pokemon in pokemons:
+        print(pokemon)
 
 # Wrap both for ease
 def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
@@ -146,8 +159,9 @@ def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
 def walkAndCatch(session, pokemon):
     if pokemon:
         logging.info("Catching %s:" % pokedex[pokemon.pokemon_data.pokemon_id])
-        session.walkTo(pokemon.latitude, pokemon.longitude, step=3.2)
+        session.walkTo(pokemon.latitude, pokemon.longitude)
         logging.info(encounterAndCatch(session, pokemon))
+
 
 
 # Do Inventory stuff
@@ -185,6 +199,11 @@ def sortCloseForts(session):
 def findClosestFort(session):
     # Find nearest fort (pokestop)
     logging.info("Finding Nearest Fort:")
+    for fort in sortCloseForts(session):
+        if(fort.cooldown_complete_timestamp_ms > int(time.time()*1000)):
+            print(fort.cooldown_complete_timestamp_ms, "COOLDOWNEND")
+            continue
+        return fort
     return sortCloseForts(session)[0]
 
 
@@ -196,7 +215,7 @@ def walkAndSpin(session, fort):
         logging.info("Spinning the Fort \"%s\":" % details.name)
 
         # Walk over
-        session.walkTo(fort.latitude, fort.longitude, step=3.2)
+        session.walkTo(fort.latitude, fort.longitude)
         # Give it a spin
         fortResponse = session.getFortSearch(fort)
         logging.info(fortResponse)
@@ -296,14 +315,77 @@ def cleanInventory(session):
 
     # Limit a certain type
     limited = {
-        items.POKE_BALL: 50,
-        items.GREAT_BALL: 100,
-        items.ULTRA_BALL: 150,
-        items.RAZZ_BERRY: 25
+        items.POKE_BALL: 10,
+        items.GREAT_BALL: 30,
+        items.RAZZ_BERRY: 30,
+        items.HYPER_POTION: 30
     }
     for limit in limited:
         if limit in bag and bag[limit] > limited[limit]:
             session.recycleItem(limit, bag[limit] - limited[limit])
+
+def getPokesByID(session, id):
+    party = session.getInventory().party
+    ret = []
+    for poke in party:
+        if poke.pokemon_id == id:
+            ret.append(poke)
+    return ret
+
+def cleanAllPokes(session):
+    party = session.checkInventory().party
+    keepers = [pokedex.VAPOREON, pokedex.EEVEE, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
+    # group
+    for poke in pokedex:
+        if poke in keepers:
+            continue
+        pokz = getPokesByID(session, poke)
+        if len(pokz) == 0:
+            continue
+        # order by cp
+        ordered_pokz= sorted(pokz, key=lambda k: k.cp)
+        #remove all but best CP and best IV
+        for x in range(len(ordered_pokz)-1):
+            pok = ordered_pokz[x]
+            if pok.cp > 1500:
+                continue
+            logging.info("Releasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
+            session.releasePokemon(pok)
+
+def cleanPokes(session, pokemon_id):
+    party = session.checkInventory().party
+    keepers = [pokedex.VAPOREON, pokedex.EEVEE, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
+    # group
+    poke = pokemon_id
+    if poke in keepers:
+        return
+    pokz = getPokesByID(session, poke)
+    if len(pokz) == 0:
+        return
+    # order by cp
+    ordered_pokz= sorted(pokz, key=lambda k: k.cp)
+    #remove all but best CP and best IV
+    for x in range(len(ordered_pokz)-1):
+        pok = ordered_pokz[x]
+        if pok.cp > 1500:
+            continue
+        logging.info("Releasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
+        session.releasePokemon(pok)
+
+
+    print "implement clean logic idiet"
+
+#cam bot :D
+def camBot(session):
+    while True:
+        cleanAllPokes(session)
+        pokies = findNearPokemon(session)
+        for pokemon in pokies:
+            walkAndCatch(session, pokemon)
+            cleanPokes(session, pokemon.pokemon_data.pokemon_id)
+        fort = findClosestFort(session)
+        walkAndSpin(session, fort)
+        cleanInventory(session)
 
 
 # Basic bot
@@ -373,18 +455,18 @@ if __name__ == '__main__':
 
     # Time to show off what we can do
     if session:
-
+        camBot(session)
         # General
-        getProfile(session)
-        getInventory(session)
+#        getProfile(session)
+#        getInventory(session)
 
         # Pokemon related
-        pokemon = findBestPokemon(session)
-        walkAndCatch(session, pokemon)
+#        pokemon = findBestPokemon(session)
+#        walkAndCatch(session, pokemon)
 
         # Pokestop related
-        fort = findClosestFort(session)
-        walkAndSpin(session, fort)
+#        fort = findClosestFort(session)
+#        walkAndSpin(session, fort)
 
         # see simpleBot() for logical usecases
         # eg. simpleBot(session)

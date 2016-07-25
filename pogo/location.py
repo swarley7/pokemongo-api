@@ -26,10 +26,13 @@ class Location(object):
         return gpxpy.geo.haversine_distance(*coords)
 
     def setLocation(self, search):
-        try:
-            geo = self.locator.geocode(search)
-        except:
-            raise GeneralPogoException('Error in Geo Request')
+        geo = 1
+        while geo == 1:
+            try:
+                geo = self.locator.geocode(search)
+            except:
+                print ('Error in Geo Request')
+
         return geo.latitude, geo.longitude, geo.altitude
 
     def setCoordinates(self, latitude, longitude):
