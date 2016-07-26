@@ -24,6 +24,36 @@ def setupLogger():
     logger.addHandler(ch)
 
 
+def displayProfile(session):
+    s = ""
+    s += session.getProfile().player_data.username
+    s += " Level:"
+    inv = session.getInventory()
+    stats = inv.stats
+    s += str(stats.level)
+    s += " XP to next: "
+    s += str(stats.next_level_xp - stats.experience)
+    s += " Pokedex: "
+    s += str(stats.unique_pokedex_entries)+"/151"
+    s += " Party size: "
+    s += str(len(inv.party))
+    s += " Strongest: "
+    s += str(getStrongestPokeInPartyString(inv.party))
+    logging.info("(PROFILE)\t-\t"+s)
+
+def getStrongestPokeInParty(party):
+    strongest = 0
+    ret = 0
+    for poke in party:
+        if poke.cp > strongest:
+            strongest = poke.cp
+            ret = poke
+    return ret
+
+def getStrongestPokeInPartyString(party):
+    poke = getStrongestPokeInParty(party)
+    return str(pokedex[poke.pokemon_id]) + " " + str(poke.cp) +" CP"
+
 def findNearPokemon(session):
     cells = session.getMapObjects()
     pokemons = []
@@ -295,6 +325,7 @@ def camBot(session):
     cooldown = 10
     while True:
         try:
+            displayProfile(session)
             cleanAllPokes(session)
             pokies = findNearPokemon(session)
             for pokemon in pokies:
