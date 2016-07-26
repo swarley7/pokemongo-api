@@ -160,7 +160,8 @@ def walkAndCatch(session, pokemon):
     if pokemon:
         logging.info("Catching %s:" % pokedex[pokemon.pokemon_data.pokemon_id])
         session.walkTo(pokemon.latitude, pokemon.longitude)
-        logging.info(encounterAndCatch(session, pokemon))
+        r = encounterAndCatch(session, pokemon)
+        print type(r)
 
 
 
@@ -217,7 +218,7 @@ def walkAndSpin(session, fort):
         session.walkTo(fort.latitude, fort.longitude)
         # Give it a spin
         fortResponse = session.getFortSearch(fort)
-        logging.info(fortResponse)
+        logging.info("XP: %d" % fortResponse.experience_awarded)
 
 
 # Walk and spin everywhere
