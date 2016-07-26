@@ -38,7 +38,10 @@ def displayProfile(session):
     s += " Party size: "
     s += str(len(inv.party))
     s += " Strongest: "
-    s += str(getStrongestPokeInPartyString(inv.party))
+    if len(inv.party) > 0:
+        s += str(getStrongestPokeInPartyString(inv.party))
+    else:
+        s += "NA"
     logging.info("(PROFILE)\t-\t"+s)
 
 def getStrongestPokeInParty(party):
