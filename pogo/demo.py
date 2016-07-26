@@ -3,7 +3,7 @@ import argparse
 import logging
 import time
 import sys
-import itertools
+import traceback
 
 from custom_exceptions import GeneralPogoException
 
@@ -60,7 +60,6 @@ def findNearPokemon(session):
     for cell in cells.map_cells:
         pokemons += [p for p in cell.wild_pokemons]
     return pokemons
-
 
 def showNearPokemon(session):
     pokemons = findNearPokemon(session)
@@ -191,7 +190,7 @@ def findClosestFort(session):
         if(fort.cooldown_complete_timestamp_ms > int(time.time()*1000)):
             continue
         return fort
-    return sortCloseForts(session)[0]
+    return False
 
 
 # Walk to fort and spin
@@ -332,8 +331,11 @@ def camBot(session):
                 walkAndCatch(session, pokemon)
                 cleanPokes(session, pokemon.pokemon_data.pokemon_id)
             fort = findClosestFort(session)
-            walkAndSpin(session, fort)
-            cleanInventory(session)
+            if fort:
+                walkAndSpin(session, fort)
+                cleanInventory(session)
+            else:
+                continue
         # Catch problems and reauthenticate
         except GeneralPogoException as e:
             logging.critical('GeneralPogoException raised: %s', e)
@@ -342,6 +344,7 @@ def camBot(session):
 
         except Exception as e:
             logging.critical('Exception raised: %s', e)
+            traceback.print_exc()
             session = poko_session.reauthenticate(session)
             time.sleep(cooldown)
 
