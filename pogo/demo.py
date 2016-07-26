@@ -13,73 +13,16 @@ from location import Location
 from pokedex import pokedex
 from inventory import items
 
+
 def setupLogger():
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
     ch = logging.StreamHandler()
     ch.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('Line %(lineno)d,%(filename)s - %(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     ch.setFormatter(formatter)
     logger.addHandler(ch)
 
-
-# Example functions
-# Get profile
-def getProfile(session):
-        logging.info("Printing Profile:")
-        profile = session.getProfile()
-        logging.info(profile)
-
-
-def setNickname(session):
-    pokemon = session.checkInventory().party[0]
-    session.nicknamePokemon(pokemon, "Testing")
-
-
-# Grab the nearest pokemon details
-def findBestPokemon(session):
-    # Get Map details and print pokemon
-    logging.info("Finding Nearby Pokemon:")
-    cells = session.getMapObjects()
-    closest = float("Inf")
-    best = -1
-    pokemonBest = None
-    latitude, longitude, _ = session.getCoordinates()
-    logging.info("Current pos: %f, %f" % (latitude, longitude))
-    for cell in cells.map_cells:
-        # Heap in pokemon protos where we have long + lat
-        pokemons = [p for p in cell.wild_pokemons] + [p for p in cell.catchable_pokemons]
-        for pokemon in pokemons:
-            # Normalize the ID from different protos
-            pokemonId = getattr(pokemon, "pokemon_id", None)
-            if not pokemonId:
-                pokemonId = pokemon.pokemon_data.pokemon_id
-
-            # Find distance to pokemon
-            dist = Location.getDistance(
-                latitude,
-                longitude,
-                pokemon.latitude,
-                pokemon.longitude
-            )
-
-            # Log the pokemon found
-            logging.info("%s, %f meters away" % (
-                pokedex[pokemonId],
-                dist
-            ))
-
-            rarity = pokedex.getRarityById(pokemonId)
-            # Greedy for rarest
-            if rarity > best:
-                pokemonBest = pokemon
-                best = rarity
-                closest = dist
-            # Greedy for closest of same rarity
-            elif rarity == best and dist < closest:
-                pokemonBest = pokemon
-                closest = dist
-    return pokemonBest
 
 def findNearPokemon(session):
     cells = session.getMapObjects()
@@ -88,10 +31,12 @@ def findNearPokemon(session):
         pokemons += [p for p in cell.wild_pokemons]
     return pokemons
 
+
 def showNearPokemon(session):
     pokemons = findNearPokemon(session)
     for pokemon in pokemons:
         print(pokemon)
+
 
 # Wrap both for ease
 def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
@@ -127,7 +72,7 @@ def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
         # or use a lower class ball
         if bestBall == items.UNKNOWN:
             if not berried and items.RAZZ_BERRY in bag and bag[items.RAZZ_BERRY]:
-                logging.info("Using a RAZZ_BERRY")
+                logging.info("(ENCOUNTER)\t-\tUsing a RAZZ_BERRY")
                 session.useItemCapture(items.RAZZ_BERRY, pokemon)
                 berried = True
                 time.sleep(delay)
@@ -135,12 +80,12 @@ def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
 
             # if no alt ball, there are no balls
             elif altBall == items.UNKNOWN:
-                raise GeneralPogoException("Out of usable balls")
+                raise GeneralPogoException("(ENCOUNTER)\t-\tOut of usable balls")
             else:
                 bestBall = altBall
 
         # Try to catch it!!
-        logging.info("Using a %s" % items[bestBall])
+        logging.info("(ENCOUNTER)\t-\tUsing a %s" % items[bestBall])
         attempt = session.catchPokemon(pokemon, bestBall)
         time.sleep(delay)
 
@@ -150,23 +95,32 @@ def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
 
         # CATCH_FLEE is bad news
         if attempt.status == 3:
-            logging.info("Possible soft ban.")
+            logging.info("(ENCOUNTER)\t-\tPossible soft ban.")
             return attempt
 
         # Only try up to x attempts
         count += 1
         if count >= limit:
-            logging.info("Over catch limit")
+            logging.info("(ENCOUNTER)\t-\tOver catch limit")
             return None
 
 
 # Catch a pokemon at a given point
 def walkAndCatch(session, pokemon):
     if pokemon:
-        logging.info("Catching %s:" % pokedex[pokemon.pokemon_data.pokemon_id])
+        logging.info("(ENCOUNTER)\t-\tCatching %s:" % pokedex[pokemon.pokemon_data.pokemon_id])
         session.walkTo(pokemon.latitude, pokemon.longitude)
         r = encounterAndCatch(session, pokemon)
-        print type(r)
+        if r.status == 1:
+            pokes = session.checkInventory().party
+            caughtpoke = {}
+            for poke in pokes:
+                if r.captured_pokemon_id == poke.id:
+                    caughtpoke = poke
+                    break
+            logging.info("(ENCOUNTER)\t-\tCaught " + pokedex[caughtpoke.pokemon_id]+" with "+str(caughtpoke.cp)+" CP")
+        else:
+            logging.info("(ENCOUNTER)\t-\tGot away")
 
 
 
@@ -182,7 +136,6 @@ def getInventory(session):
 # those step in
 def sortCloseForts(session):
     # Sort nearest forts (pokestop)
-    logging.info("Sorting Nearest Forts:")
     cells = session.getMapObjects()
     latitude, longitude, _ = session.getCoordinates()
     ordered_forts = []
@@ -204,7 +157,6 @@ def sortCloseForts(session):
 # Find the fort closest to user
 def findClosestFort(session):
     # Find nearest fort (pokestop)
-    logging.info("Finding Nearest Fort:")
     for fort in sortCloseForts(session):
         if(fort.cooldown_complete_timestamp_ms > int(time.time()*1000)):
             continue
@@ -217,13 +169,13 @@ def walkAndSpin(session, fort):
     # No fort, demo == over
     if fort:
         details = session.getFortDetails(fort)
-        logging.info("Spinning the Fort \"%s\":" % details.name)
+        logging.info("(POKESTOP)\t-\tSpinning the Fort \"%s\":" % details.name)
 
         # Walk over
         session.walkTo(fort.latitude, fort.longitude)
         # Give it a spin
         fortResponse = session.getFortSearch(fort)
-        logging.info("XP: %d" % fortResponse.experience_awarded)
+        logging.info("(POKESTOP)\t-\tXP: %d" % fortResponse.experience_awarded)
 
 
 # Walk and spin everywhere
@@ -266,48 +218,6 @@ def setEgg(session):
     incubator = inventory.incubators[0]
     return session.setEgg(incubator, egg)
 
-
-# Understand this function before you run it.
-# Otherwise you may flush pokemon you wanted.
-def cleanPokemon(session, thresholdCP=50):
-    logging.info("Cleaning out Pokemon...")
-    party = session.checkInventory().party
-    evolables = [pokedex.PIDGEY, pokedex.RATTATA, pokedex.ZUBAT]
-    toEvolve = {evolve: [] for evolve in evolables}
-    for pokemon in party:
-        # If low cp, throw away
-        if pokemon.cp < thresholdCP:
-            # It makes more sense to evolve some,
-            # than throw away
-            if pokemon.pokemon_id in evolables:
-                toEvolve[pokemon.pokemon_id].append(pokemon)
-                continue
-
-            # Get rid of low CP, low evolve value
-            logging.info("Releasing %s" % pokedex[pokemon.pokemon_id])
-            session.releasePokemon(pokemon)
-
-    # Evolve those we want
-    for evolve in evolables:
-        candies = session.checkInventory().candies[evolve]
-        pokemons = toEvolve[evolve]
-        # release for optimal candies
-        while candies // pokedex.evolves[evolve] < len(pokemons):
-            pokemon = pokemons.pop()
-            logging.info("Releasing %s" % pokedex[pokemon.pokemon_id])
-            session.releasePokemon(pokemon)
-            time.sleep(1)
-            candies += 1
-
-        # evolve remainder
-        for pokemon in pokemons:
-            logging.info("Evolving %s" % pokedex[pokemon.pokemon_id])
-            logging.info(session.evolvePokemon(pokemon))
-            time.sleep(1)
-            session.releasePokemon(pokemon)
-            time.sleep(1)
-
-
 def cleanInventory(session):
     recycled = 0
     bag = session.checkInventory().bag
@@ -330,7 +240,7 @@ def cleanInventory(session):
         if limit in bag and bag[limit] > limited[limit]:
             session.recycleItem(limit, bag[limit] - limited[limit])
             recycled+=1
-    logging.info("Cleaned out Inventory, "+str(recycled)+" items recycled.")
+    logging.info("(ITEM MANAGE)\t-\tCleaned out Inventory, "+str(recycled)+" items recycled.")
 
 def getPokesByID(party, id):
     ret = []
@@ -340,7 +250,7 @@ def getPokesByID(party, id):
     return ret
 
 def cleanAllPokes(session):
-    logging.info("Cleaning out Pokes...")
+    logging.info("(POKEMANAGE)\t-\tCleaning out Pokes...")
     party = session.checkInventory().party
     keepers = [pokedex.VAPOREON, pokedex.EEVEE, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
     # group
@@ -357,7 +267,7 @@ def cleanAllPokes(session):
             pok = ordered_pokz[x]
             if pok.cp > 1500:
                 continue
-            logging.info("Releasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
+            logging.info("(POKEMANAGE)\t-\tReleasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
             session.releasePokemon(pok)
 
 def cleanPokes(session, pokemon_id):
@@ -377,11 +287,8 @@ def cleanPokes(session, pokemon_id):
         pok = ordered_pokz[x]
         if pok.cp > 1500:
             continue
-        logging.info("Releasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
+        logging.info("(POKEMANAGE)\t-\tReleasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
         session.releasePokemon(pok)
-
-
-    print "implement clean logic idiet"
 
 #cam bot :D
 def camBot(session):
@@ -406,39 +313,6 @@ def camBot(session):
             logging.critical('Exception raised: %s', e)
             session = poko_session.reauthenticate(session)
             time.sleep(cooldown)
-
-
-# Basic bot
-def simpleBot(session):
-    # Trying not to flood the servers
-    cooldown = 1
-
-    # Run the bot
-    while True:
-        forts = sortCloseForts(session)
-        cleanPokemon(session, thresholdCP=300)
-        cleanInventory(session)
-        try:
-            for fort in forts:
-                pokemon = findBestPokemon(session)
-                walkAndCatch(session, pokemon)
-                walkAndSpin(session, fort)
-                cooldown = 1
-                time.sleep(1)
-
-        # Catch problems and reauthenticate
-        except GeneralPogoException as e:
-            logging.critical('GeneralPogoException raised: %s', e)
-            session = poko_session.reauthenticate(session)
-            time.sleep(cooldown)
-            cooldown *= 2
-
-        except Exception as e:
-            logging.critical('Exception raised: %s', e)
-            session = poko_session.reauthenticate(session)
-            time.sleep(cooldown)
-            cooldown *= 2
-
 
 # Entry point
 # Start off authentication and demo

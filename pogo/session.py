@@ -521,7 +521,7 @@ class PogoSession(object):
         divisions = dist/speed
         dlat = (latitude - olatitude)/divisions
         dlon = (longitude - olongitude)/divisions
-
+        logging.info("(TRAVEL)\t-\tWalking "+str(dist)+"m at "+str(speed)+"m/s, will take approx "+str(divisions)+"s")
         while dist > speed:
             latitude-=dlat
             longitude-=dlon
