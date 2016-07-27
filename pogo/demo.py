@@ -265,8 +265,11 @@ def cleanInventory(session):
     limited = {
         items.POKE_BALL: 10,
         items.GREAT_BALL: 30,
+        items.ULTRA_BALL: 100,
         items.RAZZ_BERRY: 30,
-        items.HYPER_POTION: 30
+        items.HYPER_POTION: 30,
+        items.MAX_POTION: 50,
+        items.MAX_REVIVE: 40
     }
     for limit in limited:
         if limit in bag and bag[limit] > limited[limit]:
@@ -284,7 +287,7 @@ def getPokesByID(party, id):
 def cleanAllPokes(session):
     logging.info("(POKEMANAGE)\t-\tCleaning out Pokes...")
     party = session.checkInventory().party
-    keepers = [pokedex.VAPOREON, pokedex.EEVEE, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
+    keepers = [pokedex.VAPOREON, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
     # group
     for poke in range(0,151):
         if poke in keepers:
@@ -297,14 +300,14 @@ def cleanAllPokes(session):
         #remove all but best CP and best IV
         for x in range(len(ordered_pokz)-1):
             pok = ordered_pokz[x]
-            if pok.cp > 1500:
+            if pok.cp > 1500 or (pok.pokemon_id == pokedex.EEVEE and pok.cp > 600):
                 continue
             logging.info("(POKEMANAGE)\t-\tReleasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
             session.releasePokemon(pok)
 
 def cleanPokes(session, pokemon_id):
     party = session.checkInventory().party
-    keepers = [pokedex.VAPOREON, pokedex.EEVEE, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
+    keepers = [pokedex.VAPOREON, pokedex.ARCANINE, pokedex.SNORLAX, pokedex.LAPRAS]
     # group
     poke = pokemon_id
     if poke in keepers:
@@ -317,28 +320,37 @@ def cleanPokes(session, pokemon_id):
     #remove all but best CP and best IV
     for x in range(len(ordered_pokz)-1):
         pok = ordered_pokz[x]
-        if pok.cp > 1500:
+        if pok.cp > 1500 or (pok == pokedex.EEVEE and pok.cp > 600):
             continue
         logging.info("(POKEMANAGE)\t-\tReleasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
         session.releasePokemon(pok)
 
 #cam bot :D
 def camBot(session):
+    startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
     while True:
         try:
+            lat, lon, alt = session.getCoordinates()
+            dist = Location.getDistance(startlat, startlon,lat, lon)
+            print "Distance from start: ", dist
+            if dist > 5000:
+                print "Walking back to start to stay in area"
+                session.walkTo(startlat, startlon)
             displayProfile(session)
             cleanAllPokes(session)
-            pokies = findNearPokemon(session)
-            for pokemon in pokies:
-                walkAndCatch(session, pokemon)
-                cleanPokes(session, pokemon.pokemon_data.pokemon_id)
+            # check for pokeballs (don't try to catch if we have none)
+            bag = session.getInventory().bag
+            if bag[items.POKE_BALL] > 0 or bag[items.GREAT_BALL] > 0 or bag[items.ULTRA_BALL] > 0:
+                pokies = findNearPokemon(session)
+                for pokemon in pokies:
+                    walkAndCatch(session, pokemon)
+                    cleanPokes(session, pokemon.pokemon_data.pokemon_id)
             fort = findClosestFort(session)
             if fort:
                 walkAndSpin(session, fort)
                 cleanInventory(session)
-            else:
-                continue
+            # check distance from start
         # Catch problems and reauthenticate
         except GeneralPogoException as e:
             logging.critical('GeneralPogoException raised: %s', e)
