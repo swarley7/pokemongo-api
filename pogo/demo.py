@@ -320,7 +320,10 @@ def cleanPokes(session, pokemon_id):
     #remove all but best CP and best IV
     for x in range(len(ordered_pokz)-1):
         pok = ordered_pokz[x]
-        if pok.cp > 1500 or (pok == pokedex.EEVEE and pok.cp > 600):
+        if pok.cp > 1500 or \
+                (pok.pokemon_id == pokedex.EEVEE and pok.cp > 600) or \
+                (pok.pokemon_id == pokedex.DRATINI and pok.cp > 700) or \
+                (pok.pokemon_id == pokedex.DRAGONAIR and pok.cp > 1100):
             continue
         logging.info("(POKEMANAGE)\t-\tReleasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
         session.releasePokemon(pok)
@@ -333,9 +336,9 @@ def camBot(session):
         try:
             lat, lon, alt = session.getCoordinates()
             dist = Location.getDistance(startlat, startlon,lat, lon)
-            print "Distance from start: ", dist
+            logging.info("(TRAVEL)\t-\tDistance from start: "+str(dist))
             if dist > 5000:
-                print "Walking back to start to stay in area"
+                print "(TRAVEL)\t-\tWalking back to start to stay in area"
                 session.walkTo(startlat, startlon)
             displayProfile(session)
             cleanAllPokes(session)
