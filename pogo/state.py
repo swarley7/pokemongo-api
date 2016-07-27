@@ -14,6 +14,8 @@ from Networking.Responses import UseItemEggIncubatorResponse_pb2
 from Networking.Responses import RecycleInventoryItemResponse_pb2
 from Networking.Responses import UseItemCaptureResponse_pb2
 from Networking.Responses import NicknamePokemonResponse_pb2
+from Networking.Responses import GetGymDetailsResponse_pb2
+from Networking.Responses import StartGymBattleResponse_pb2
 
 
 class State(object):
@@ -35,3 +37,5 @@ class State(object):
         self.recycle = RecycleInventoryItemResponse_pb2.RecycleInventoryItemResponse()
         self.incubator = UseItemEggIncubatorResponse_pb2.UseItemEggIncubatorResponse()
         self.nickname = NicknamePokemonResponse_pb2.NicknamePokemonResponse()
+        self.gymDetails = GetGymDetailsResponse_pb2.GetGymDetailsResponse()
+        self.startGymBattleMessage = StartGymBattleResponse_pb2.StartGymBattleResponse()

@@ -16,6 +16,8 @@ from POGOProtos.Networking.Requests.Messages import DownloadSettingsMessage_pb2
 from POGOProtos.Networking.Requests.Messages import UseItemEggIncubatorMessage_pb2
 from POGOProtos.Networking.Requests.Messages import RecycleInventoryItemMessage_pb2
 from POGOProtos.Networking.Requests.Messages import NicknamePokemonMessage_pb2
+from POGOProtos.Networking.Requests.Messages import StartGymBattleMessage_pb2
+from POGOProtos.Networking.Requests.Messages import GetGymDetailsMessage_pb2
 
 # Load local
 import api
@@ -277,7 +279,7 @@ class PogoSession(object):
         # Return everything
         return self._state.mapObjects
 
-    # Get Location
+    # Spin fort
     def getFortSearch(self, fort):
 
         # Create request
@@ -301,7 +303,7 @@ class PogoSession(object):
         # Return everything
         return self._state.fortSearch
 
-    # set an Egg into an incubator
+    # Get fort info
     def getFortDetails(self, fort):
 
         # Create request
@@ -322,6 +324,49 @@ class PogoSession(object):
 
         # Return everything
         return self._state.fortDetails
+
+    # Get gym info
+    def getGymDetails(self, gym):
+        # Create request
+        payload = [Request_pb2.Request(
+            request_type=RequestType_pb2.GET_GYM_DETAILS,
+            request_message=GetGymDetailsMessage_pb2.GetGymDetailsMessage(
+                gym_id=gym.id,
+                player_latitude=self.location.latitude,
+                player_longitude=self.location.longitude,
+                gym_latitude=gym.latitude,
+                gym_longitude=gym.longitude,
+            ).SerializeToString()
+        )]
+
+        # Send
+        res = self.wrapAndRequest(payload)
+
+        # Parse
+        self._state.gymDetails.ParseFromString(res.returns[0])
+
+        # Return everything
+        return self._state.gymDetails
+    # Get a battle ID for taking gyms
+    def getBattleId(self, gym_id, attacking_pokemon_ids, defending_pokemon_id, lat, lon):
+        payload = [Request_pb2.Request(
+            request_type=RequestType_pb2.START_GYM_BATTLE,
+            request_message=StartGymBattleMessage_pb2.StartGymBattleMessage(
+                gym_id=gym_id,
+                attacking_pokemon_ids=attacking_pokemon_ids,
+                defending_pokemon_id=defending_pokemon_id,
+                player_latitude=lat,
+                player_longitude=lon
+            ).SerializeToString()
+        )]
+        # Send
+        res = self.wrapAndRequest(payload)
+        print "sent", res
+        # Parse
+        self._state.startGymBattleMessage.ParseFromString(res.returns[0])
+
+        # Return everything
+        return self._state.startGymBattleMessage
 
     # Get encounter
     def encounterPokemon(self, pokemon):
