@@ -265,8 +265,8 @@ def cleanInventory(session):
 
     # Limit a certain type
     limited = {
-        items.POKE_BALL: 40,
-        items.GREAT_BALL: 50,
+        items.POKE_BALL: 30,
+        items.GREAT_BALL: 40,
         items.ULTRA_BALL: 100,
         items.RAZZ_BERRY: 50,
         items.HYPER_POTION: 0,
@@ -333,26 +333,30 @@ def cleanPokes(session, pokemon_id):
 
 def catch_demPokez(pokez, sess, whatup_cunt):
     if walkAndCatch(sess, pokez, whatup_cunt):
+        cleanAllPokes(sess)
         return True
     else:
+        cleanAllPokes(sess)
         return False
 
 def enough_time_left(pokzzzzzzzzz):
-    return pokzzzzzzzzz.time_till_hidden_ms > 1000
+    return min(sorted(pokzzzzzzzzz, lambda p: p.time_till_hidden_ms)) > 1000
 
-def safe_catch(pokies, speed, session): # NOT CAMEL CASE COZ PEP8 U FUCKERS
+def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
     """
     Performs a safe catch of good pokemanz by catching the shithouse ones first and only approaching the mad dogs once it's safe to do so (i.e. after you've catch_successed a shithouse one)
     """
     epicpokes = []
     shitpokes = []
     for pokemon in pokies:
-        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 3: #if rare pokemanzzzz
+        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 2: #if rare pokemanzzzz
             epicpokes.append(pokemon)
         else:
             shitpokes.append(pokemon)
-    logging.info("SOME EPIC POKES EYYYYY: {}".format(epicpokes))
-    logging.info("THESE POKES SUCK A MASSIVE DICK: {}".format(shitpokes))
+    if epicpokes:
+        logging.info("SOME EPIC POKES EYYYYY: {}".format("\n".join([repr(cunt.pokemon_data) for cunt in epicpokes])))
+    if shitpokes:
+        logging.info("THESE POKES SUCK A MASSIVE DICK: {}".format("\n".join([repr(cunt.pokemon_data) for cunt in shitpokes])))
     if epicpokes:
         while True:
             try:
@@ -371,8 +375,7 @@ def safe_catch(pokies, speed, session): # NOT CAMEL CASE COZ PEP8 U FUCKERS
         for spaz in epicpokes:
             catch_demPokez(spaz, session, speed)
     for pokemon in shitpokes:
-        walkAndCatch(session, pokemon, speed)
-        cleanPokes(session, pokemon.pokemon_data.pokemon_id)
+        catch_demPokez(pokemon, session, speed)
     return True
 #cam bot :D
 def camBot(session):
@@ -396,8 +399,11 @@ def camBot(session):
             # check for pokeballs (don't try to catch if we have none)
             bag = session.getInventory().bag
             if bag[items.POKE_BALL] > 0 or bag[items.GREAT_BALL] > 0 or bag[items.ULTRA_BALL] > 0 or bag[items.MASTER_BALL] > 0:
+                coutn = 1
                 while True:
                     if safe_catch(findNearPokemon(session), session, speed):
+                        break
+                    elif coutn >5:
                         break
             fort = findClosestFort(session)
             if fort:
