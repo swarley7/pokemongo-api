@@ -332,7 +332,7 @@ def cleanPokes(session, pokemon_id):
 def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
-    speed = 150*0.277778 #(105kph)
+    speed = 150*0.277778  # (150kph)
     while True:
         try:
             lat, lon, alt = session.getCoordinates()
