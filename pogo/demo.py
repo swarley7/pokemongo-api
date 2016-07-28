@@ -4,7 +4,7 @@ import logging
 import time
 import sys
 import traceback
-
+import pdb
 from custom_exceptions import GeneralPogoException
 
 from api import PokeAuthSession
@@ -151,8 +151,10 @@ def walkAndCatch(session, pokemon, speed):
                     caughtpoke = poke
                     break
             logging.info("(ENCOUNTER)\t-\tCaught " + pokedex[caughtpoke.pokemon_id]+" with "+str(caughtpoke.cp)+" CP")
+            return True
         else:
             logging.info("(ENCOUNTER)\t-\tGot away")
+            return False
 
 
 
@@ -263,13 +265,14 @@ def cleanInventory(session):
 
     # Limit a certain type
     limited = {
-        items.POKE_BALL: 10,
-        items.GREAT_BALL: 30,
+        items.POKE_BALL: 40,
+        items.GREAT_BALL: 50,
         items.ULTRA_BALL: 100,
-        items.RAZZ_BERRY: 30,
-        items.HYPER_POTION: 30,
-        items.MAX_POTION: 50,
-        items.MAX_REVIVE: 40
+        items.RAZZ_BERRY: 50,
+        items.HYPER_POTION: 0,
+        items.MAX_POTION: 0,
+        items.MAX_REVIVE: 0,
+        items.MASTER_BALL: 300
     }
     for limit in limited:
         if limit in bag and bag[limit] > limited[limit]:
@@ -328,11 +331,58 @@ def cleanPokes(session, pokemon_id):
         logging.info("(POKEMANAGE)\t-\tReleasing: "+pokedex[pok.pokemon_id]+" "+str(pok.cp)+" CP")
         session.releasePokemon(pok)
 
+def catch_demPokez(pokez, sess, whatup_cunt):
+    if walkAndCatch(sess, pokez, whatup_cunt):
+        return True
+    else:
+        return False
+
+def enough_time_left(pokzzzzzzzzz):
+    return pokzzzzzzzzz.time_till_hidden_ms > 1000
+
+def safe_catch(pokies, speed, session): # NOT CAMEL CASE COZ PEP8 U FUCKERS
+    """
+    Performs a safe catch of good pokemanz by catching the shithouse ones first and only approaching the mad dogs once it's safe to do so (i.e. after you've catch_successed a shithouse one)
+    """
+    epicpokes = []
+    shitpokes = []
+    for pokemon in pokies:
+        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 3: #if rare pokemanzzzz
+            epicpokes.append(pokemon)
+        else:
+            shitpokes.append(pokemon)
+    logging.info("SOME EPIC POKES EYYYYY: {}".format(epicpokes))
+    logging.info("THESE POKES SUCK A MASSIVE DICK: {}".format(shitpokes))
+    if epicpokes:
+        while True:
+            try:
+                asshole = shitpokes.pop()
+                if catch_demPokez(asshole, session, speed):
+                    break
+                else:
+                    continue
+            except IndexError:
+                logging.info("Ran out of shithouse pokez")
+                if enough_time_left(pokies):
+                    return False
+                else:
+                    logging.info("well fuckit - no time to waste...")
+                    break
+        for spaz in epicpokes:
+            catch_demPokez(spaz, session, speed)
+    for pokemon in shitpokes:
+        walkAndCatch(session, pokemon, speed)
+        cleanPokes(session, pokemon.pokemon_data.pokemon_id)
+    return True
 #cam bot :D
 def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
     speed = 150*0.277778  # (150kph)
+    # with open("GOOD_FUCKING_POKEMONZ.txt") as f:
+    #     for line in f.readlines():
+    #         line = line.strip()
+    #         goodpokes.append(line)
     while True:
         try:
             lat, lon, alt = session.getCoordinates()
@@ -345,11 +395,10 @@ def camBot(session):
             cleanAllPokes(session)
             # check for pokeballs (don't try to catch if we have none)
             bag = session.getInventory().bag
-            if bag[items.POKE_BALL] > 0 or bag[items.GREAT_BALL] > 0 or bag[items.ULTRA_BALL] > 0:
-                pokies = findNearPokemon(session)
-                for pokemon in pokies:
-                    walkAndCatch(session, pokemon, speed)
-                    cleanPokes(session, pokemon.pokemon_data.pokemon_id)
+            if bag[items.POKE_BALL] > 0 or bag[items.GREAT_BALL] > 0 or bag[items.ULTRA_BALL] > 0 or bag[items.MASTER_BALL] > 0:
+                while True:
+                    if safe_catch(findNearPokemon(session), session, speed, goodpokes):
+                        break
             fort = findClosestFort(session)
             if fort:
                 walkAndSpin(session, fort, speed)
@@ -371,6 +420,8 @@ def camBot(session):
 # Start off authentication and demo
 if __name__ == '__main__':
     while(True):
+
+
         setupLogger()
         logging.debug('Logger set up')
 
