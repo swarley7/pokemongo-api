@@ -408,7 +408,7 @@ def camBot(session):
                 while True:
                     if safe_catch(findNearPokemon(session), session, speed):
                         break
-                    elif coutn >5:
+                    elif coutn >10:
                         time.sleep(5)
                         break
             fort = findClosestFort(session)
