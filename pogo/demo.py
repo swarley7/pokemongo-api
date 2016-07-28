@@ -24,11 +24,11 @@ def setupLogger():
     logger.addHandler(ch)
 
 
-def displayProfile(session):
+def displayProfile(sess):
     s = ""
-    s += session.getProfile().player_data.username
+    s += sess.getProfile().player_data.username
     s += " Level:"
-    inv = session.getInventory()
+    inv = sess.getInventory()
     stats = inv.stats
     s += str(stats.level)
     s += " XP to next: "
@@ -138,10 +138,10 @@ def encounterAndCatch(session, pokemon, thresholdP=0.5, limit=5, delay=2):
 
 
 # Catch a pokemon at a given point
-def walkAndCatch(session, pokemon):
+def walkAndCatch(session, pokemon, speed):
     if pokemon:
         logging.info("(ENCOUNTER)\t-\tCatching %s:" % pokedex[pokemon.pokemon_data.pokemon_id])
-        session.walkTo(pokemon.latitude, pokemon.longitude)
+        session.walkTo(pokemon.latitude, pokemon.longitude, speed)
         r = encounterAndCatch(session, pokemon)
         if r.status == 1:
             pokes = session.checkInventory().party
@@ -197,14 +197,14 @@ def findClosestFort(session):
 
 
 # Walk to fort and spin
-def walkAndSpin(session, fort):
+def walkAndSpin(session, fort, speed):
     # No fort, demo == over
     if fort:
         details = session.getFortDetails(fort)
         logging.info("(POKESTOP)\t-\tSpinning the Fort \"%s\":" % details.name)
 
         # Walk over
-        session.walkTo(fort.latitude, fort.longitude)
+        session.walkTo(fort.latitude, fort.longitude, speed)
         # Give it a spin
         fortResponse = session.getFortSearch(fort)
         logging.info("(POKESTOP)\t-\tXP: %d" % fortResponse.experience_awarded)
@@ -213,7 +213,7 @@ def walkAndSpin(session, fort):
 # Walk and spin everywhere
 def walkAndSpinMany(session, forts):
     for fort in forts:
-        walkAndSpin(session, fort)
+        walkAndSpin(session, fort, speed)
 
 
 # A very brute force approach to evolving
@@ -332,6 +332,7 @@ def cleanPokes(session, pokemon_id):
 def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
+    speed = 150*0.277778 #(105kph)
     while True:
         try:
             lat, lon, alt = session.getCoordinates()
@@ -339,7 +340,7 @@ def camBot(session):
             logging.info("(TRAVEL)\t-\tDistance from start: "+str(dist))
             if dist > 5000:
                 print "(TRAVEL)\t-\tWalking back to start to stay in area"
-                session.walkTo(startlat, startlon)
+                session.walkTo(startlat, startlon, speed)
             displayProfile(session)
             cleanAllPokes(session)
             # check for pokeballs (don't try to catch if we have none)
@@ -347,11 +348,11 @@ def camBot(session):
             if bag[items.POKE_BALL] > 0 or bag[items.GREAT_BALL] > 0 or bag[items.ULTRA_BALL] > 0:
                 pokies = findNearPokemon(session)
                 for pokemon in pokies:
-                    walkAndCatch(session, pokemon)
+                    walkAndCatch(session, pokemon, speed)
                     cleanPokes(session, pokemon.pokemon_data.pokemon_id)
             fort = findClosestFort(session)
             if fort:
-                walkAndSpin(session, fort)
+                walkAndSpin(session, fort, speed)
                 cleanInventory(session)
             # check distance from start
         # Catch problems and reauthenticate
@@ -369,56 +370,57 @@ def camBot(session):
 # Entry point
 # Start off authentication and demo
 if __name__ == '__main__':
-    setupLogger()
-    logging.debug('Logger set up')
+    while(True):
+        setupLogger()
+        logging.debug('Logger set up')
 
-    # Read in args
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--auth", help="Auth Service", required=True)
-    parser.add_argument("-u", "--username", help="Username", required=True)
-    parser.add_argument("-p", "--password", help="Password", required=True)
-    parser.add_argument("-l", "--location", help="Location")
-    parser.add_argument("-g", "--geo_key", help="GEO API Secret")
-    args = parser.parse_args()
+        # Read in args
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-a", "--auth", help="Auth Service", required=True)
+        parser.add_argument("-u", "--username", help="Username", required=True)
+        parser.add_argument("-p", "--password", help="Password", required=True)
+        parser.add_argument("-l", "--location", help="Location")
+        parser.add_argument("-g", "--geo_key", help="GEO API Secret")
+        args = parser.parse_args()
 
-    # Check service
-    if args.auth not in ['ptc', 'google']:
-        logging.error('Invalid auth service {}'.format(args.auth))
-        sys.exit(-1)
+        # Check service
+        if args.auth not in ['ptc', 'google']:
+            logging.error('Invalid auth service {}'.format(args.auth))
+            sys.exit(-1)
 
-    # Create PokoAuthObject
-    poko_session = PokeAuthSession(
-        args.username,
-        args.password,
-        args.auth,
-        geo_key=args.geo_key
-    )
+        # Create PokoAuthObject
+        poko_session = PokeAuthSession(
+            args.username,
+            args.password,
+            args.auth,
+            geo_key=args.geo_key
+        )
 
-    # Authenticate with a given location
-    # Location is not inherent in authentication
-    # But is important to session
-    if args.location:
-        session = poko_session.authenticate(locationLookup=args.location)
-    else:
-        session = poko_session.authenticate()
+        # Authenticate with a given location
+        # Location is not inherent in authentication
+        # But is important to session
+        if args.location:
+            session = poko_session.authenticate(locationLookup=args.location)
+        else:
+            session = poko_session.authenticate()
 
-    # Time to show off what we can do
-    if session:
-        camBot(session)
-        # General
-#        getProfile(session)
-#        getInventory(session)
+        # Time to show off what we can do
+        if session:
+            camBot(session)
+            # General
+    #        getProfile(session)
+    #        getInventory(session)
 
-        # Pokemon related
-#        pokemon = findBestPokemon(session)
-#        walkAndCatch(session, pokemon)
+            # Pokemon related
+    #        pokemon = findBestPokemon(session)
+    #        walkAndCatch(session, pokemon)
 
-        # Pokestop related
-#        fort = findClosestFort(session)
-#        walkAndSpin(session, fort)
+            # Pokestop related
+    #        fort = findClosestFort(session)
+    #        walkAndSpin(session, fort)
 
-        # see simpleBot() for logical usecases
-        # eg. simpleBot(session)
+            # see simpleBot() for logical usecases
+            # eg. simpleBot(session)
 
-    else:
-        logging.critical('Session not created successfully')
+        else:
+            logging.critical('Session not created successfully')

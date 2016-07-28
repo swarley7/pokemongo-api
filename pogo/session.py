@@ -505,8 +505,8 @@ class PogoSession(object):
 
     '''
     #speed in m/s
-    def walkTo(self, olatitude, olongitude):
-        speed = 22 #approx 80km/h
+    def walkTo(self, olatitude, olongitude, speed):
+        # speed in m/s
         # Calculate distance to position
         latitude, longitude, _ = self.getCoordinates()
         dist = Location.getDistance(
