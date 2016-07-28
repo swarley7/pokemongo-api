@@ -340,7 +340,15 @@ def catch_demPokez(pokez, sess, whatup_cunt):
         return False
 
 def enough_time_left(pokzzzzzzzzz):
-    return min(sorted(pokzzzzzzzzz, lambda p: p.time_till_hidden_ms)) > 1000
+    return min(sorted(pokzzzzzzzzz, lambda p: p.time_till_hidden_ms)) > 10000
+
+def location_jumper(locs, session):
+    for loc in locs:
+    pass
+
+def check_softban(session, fort, speed):
+    return walkAndSpin(session, fort, speed)
+
 
 def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
     """
@@ -349,7 +357,7 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
     epicpokes = []
     shitpokes = []
     for pokemon in pokies:
-        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 2: #if rare pokemanzzzz
+        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 3: #if rare pokemanzzzz
             epicpokes.append(pokemon)
         else:
             shitpokes.append(pokemon)
@@ -382,10 +390,7 @@ def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
     speed = 150*0.277778  # (150kph)
-    # with open("GOOD_FUCKING_POKEMONZ.txt") as f:
-    #     for line in f.readlines():
-    #         line = line.strip()
-    #         goodpokes.append(line)
+
     while True:
         try:
             lat, lon, alt = session.getCoordinates()
@@ -404,6 +409,7 @@ def camBot(session):
                     if safe_catch(findNearPokemon(session), session, speed):
                         break
                     elif coutn >5:
+                        time.sleep(5)
                         break
             fort = findClosestFort(session)
             if fort:
