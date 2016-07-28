@@ -344,7 +344,7 @@ def enough_time_left(pokzzzzzzzzz):
 
 def location_jumper(locs, session):
     for loc in locs:
-    pass
+        pass
 
 def check_softban(session, fort, speed):
     return walkAndSpin(session, fort, speed)
