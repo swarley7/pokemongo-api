@@ -397,7 +397,7 @@ def camBot(session):
             bag = session.getInventory().bag
             if bag[items.POKE_BALL] > 0 or bag[items.GREAT_BALL] > 0 or bag[items.ULTRA_BALL] > 0 or bag[items.MASTER_BALL] > 0:
                 while True:
-                    if safe_catch(findNearPokemon(session), session, speed, goodpokes):
+                    if safe_catch(findNearPokemon(session), session, speed):
                         break
             fort = findClosestFort(session)
             if fort:
