@@ -362,9 +362,9 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
         else:
             shitpokes.append(pokemon)
     if epicpokes:
-        logging.info("SOME EPIC POKES EYYYYY: {}".format("\n".join([repr(cunt.pokemon_data) for cunt in epicpokes])))
+        logging.info("SOME EPIC POKES EYYYYY: {}".format(", ".join([repr(cunt.pokemon_data).strip("\n") for cunt in epicpokes])))
     if shitpokes:
-        logging.info("THESE POKES SUCK A MASSIVE DICK: {}".format("\n".join([repr(cunt.pokemon_data) for cunt in shitpokes])))
+        logging.info("THESE POKES SUCK A MASSIVE DICK: {}".format(", ".join([repr(cunt.pokemon_data).strip("\n") for cunt in shitpokes])))
     if epicpokes:
         while True:
             try:
@@ -389,7 +389,7 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
 
 def grab_some_fkn_pokeballz(session):
     pass
-    
+
 def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
