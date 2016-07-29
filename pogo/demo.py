@@ -438,7 +438,6 @@ def camBot(session):
                 grab_some_fkn_pokeballz(session, speed)
             evolveAllPokemon(session)
             cleanAllPokes(session)
-            evolveAllPokemon(session)
             # check distance from start
         # Catch problems and reauthenticate
         except GeneralPogoException as e:
