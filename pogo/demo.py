@@ -340,7 +340,7 @@ def catch_demPokez(pokez, sess, whatup_cunt):
         return False
 
 def enough_time_left(pokzzzzzzzzz):
-    return min(sorted(pokzzzzzzzzz, lambda p: p.time_till_hidden_ms)) > 10000
+    return min(sorted(pokzzzzzzzzz, key=lambda p: p.time_till_hidden_ms)) > 1000
 
 def location_jumper(locs, session):
     for loc in locs:
@@ -386,6 +386,9 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
         catch_demPokez(pokemon, session, speed)
     return True
 #cam bot :D
+
+def grab_some_fkn_pokeballz(session):
+
 def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
@@ -412,10 +415,13 @@ def camBot(session):
                     elif coutn >13:
                         time.sleep(5)
                         break
-            fort = findClosestFort(session)
-            if fort:
-                walkAndSpin(session, fort, speed)
-                cleanInventory(session)
+                fort = findClosestFort(session)
+                if fort:
+                    walkAndSpin(session, fort, speed)
+                    cleanInventory(session)
+            else:
+                grab_some_fkn_pokeballz(session)
+
             # check distance from start
         # Catch problems and reauthenticate
         except GeneralPogoException as e:
