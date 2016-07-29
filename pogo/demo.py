@@ -387,7 +387,7 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
     return True
 #cam bot :D
 
-def grab_some_fkn_pokeballz(session):
+def grab_some_fkn_pokeballz(session, speed):
     fort = findClosestFort(session)
     if fort:
         walkAndSpin(session, fort, speed)
@@ -419,9 +419,9 @@ def camBot(session):
                     elif coutn >13:
                         time.sleep(5)
                         break
-                grab_some_fkn_pokeballz(session)
+                grab_some_fkn_pokeballz(session, speed)
             else:
-                grab_some_fkn_pokeballz(session)
+                grab_some_fkn_pokeballz(session, speed)
 
             # check distance from start
         # Catch problems and reauthenticate
