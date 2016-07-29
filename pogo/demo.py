@@ -236,7 +236,7 @@ def walkAndSpinMany(session, forts):
 def evolveAllPokemon(session):
     inventory = session.checkInventory()
     logging.info("Evolving all your pokes... hope you don't mind")
-    for pokemon in inventory.party:
+    for pokemon in inventory.party[::-1]:
         poke_status = session.evolvePokemon(pokemon)
         logging.debug("EVOLVED SOME ASSHOLE: {}".format(poke_status))
         time.sleep(0.02)
@@ -349,12 +349,8 @@ def cleanPokes(session, pokemon_id):
 
 def catch_demPokez(pokez, sess, whatup_cunt):
     if walkAndCatch(sess, pokez, whatup_cunt):
-        evolveAllPokemon(sess)
-        cleanAllPokes(sess)
         return True
     else:
-        evolveAllPokemon(sess)
-        cleanAllPokes(sess)
         return False
 
 def enough_time_left(pokzzzzzzzzz):
@@ -440,7 +436,9 @@ def camBot(session):
                 grab_some_fkn_pokeballz(session, speed)
             else:
                 grab_some_fkn_pokeballz(session, speed)
-
+            evolveAllPokemon(session)
+            cleanAllPokes(session)
+            evolveAllPokemon(session)
             # check distance from start
         # Catch problems and reauthenticate
         except GeneralPogoException as e:
