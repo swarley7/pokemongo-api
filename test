@@ -1,0 +1,1886 @@
+DEBUG:root:Logger set up
+DEBUG:root:Logger set up
+INFO:root:Creating PTC session for swarley777
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-450034-vDhNHfFwWz5FloUrvboO-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+INFO:root:Coordinates: 40.7127837 -74.0059413 0.0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+INFO:root:(TRAVEL)	-	Distance from start: 0.0
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+INFO:root:(PROFILE)	-	spam+poke Level:20 XP to next: 8675 Pokedex: 64/151 Party size: 47 Strongest: GOLDUCK 965 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6677
+INFO:root:(POKESTOP)	-	Spinning the Fort "New York City Hall Placard":
+INFO:root:(TRAVEL)	-	Walking 65.6531533105m at 41.6667m/s, will take approx 1.57567441891s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 13085
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 13175
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6519
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6487
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6489
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 65.6531533105
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+INFO:root:(PROFILE)	-	spam+poke Level:20 XP to next: 8625 Pokedex: 64/151 Party size: 47 Strongest: GOLDUCK 965 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6547
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 85.3891734151m at 41.6667m/s, will take approx 2.04933852249s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 13398
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 13398
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 13398
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6603
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 0, 901: 1, 102: 0, 103: 0, 201: 0, 401: 2, 701: 45, 101: 0}
+INFO:root:(ENCOUNTER)	-	Using a RAZZ_BERRY
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 12
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6603
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 310 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 6489
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 8620
+INFO:root:(POKESTOP)	-	Spinning the Fort "Pace University":
+INFO:root:(TRAVEL)	-	Walking 23.6587422598m at 41.6667m/s, will take approx 0.567809359987s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/523/rpc HTTP/1.1" 200 13290
+DEBUG:root:Logger set up
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-491748-EdrKweE0qUcdyFwtO5qM-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+INFO:root:Coordinates: 40.7127837 -74.0059413 0.0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 0.0
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1111873 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:SOME EPIC POKES EYYYYY: pokemon_id: PINSIR
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: POLIWAG, pokemon_id: ABRA, pokemon_id: ZUBAT, pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 15.7148630091m at 41.6667m/s, will take approx 0.377156410494s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 38, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 99 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 99 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching PINSIR:
+INFO:root:(TRAVEL)	-	Walking 90.2567034209m at 41.6667m/s, will take approx 2.16615914917s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 37, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a RAZZ_BERRY
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 12
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught PINSIR with 863 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: PINSIR 863 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching POLIWAG:
+INFO:root:(TRAVEL)	-	Walking 104.265259852m at 41.6667m/s, will take approx 2.50236423455s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 35, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught POLIWAG with 516 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: POLIWAG 516 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching ABRA:
+INFO:root:(TRAVEL)	-	Walking 93.2760617697m at 41.6667m/s, will take approx 2.23862369157s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 34, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ABRA with 209 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ABRA 209 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 136.208041416m at 41.6667m/s, will take approx 3.2689903788s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 33, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 213 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 213 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "New York City Hall Placard":
+INFO:root:(TRAVEL)	-	Walking 46.1317647708m at 41.6667m/s, will take approx 1.10716146877s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 65.6531533105
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1110773 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 73.3471453436m at 41.6667m/s, will take approx 1.76033007998s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 33, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 345 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 345 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Pace University":
+INFO:root:(TRAVEL)	-	Walking 14.2012236338m at 41.6667m/s, will take approx 0.340829094548s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 127.103480524
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1110513 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT, pokemon_id: MACHOP, pokemon_id: SPEAROW
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 23.6587422598m at 41.6667m/s, will take approx 0.567809359987s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 32, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 155 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 155 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching MACHOP:
+INFO:root:(TRAVEL)	-	Walking 25.5242192717m at 41.6667m/s, will take approx 0.612580772457s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 31, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a RAZZ_BERRY
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 12
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught MACHOP with 743 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: MACHOP 743 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching SPEAROW:
+INFO:root:(TRAVEL)	-	Walking 52.599957896m at 41.6667m/s, will take approx 1.26239797958s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 30, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught SPEAROW with 160 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: SPEAROW 160 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Eight Spruce Street":
+INFO:root:(TRAVEL)	-	Walking 29.2131482628m at 41.6667m/s, will take approx 0.701114997416s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 200.539590712
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109833 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 90.893992365m at 41.6667m/s, will take approx 2.1814540716s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 29, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 221 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 221 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "The Royal Building 150 William St.":
+INFO:root:(TRAVEL)	-	Walking 45.8368754397m at 41.6667m/s, will take approx 1.10008413048s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 335.863629271
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109573 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Pace University FD":
+INFO:root:(TRAVEL)	-	Walking 44.3520733964m at 41.6667m/s, will take approx 1.06444890995s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 378.946633752
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109523 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "DeLury Square":
+INFO:root:(TRAVEL)	-	Walking 99.1077277886m at 41.6667m/s, will take approx 2.37858356406s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 414.26806902
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109473 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "John J Delury Senior Plaza":
+INFO:root:(TRAVEL)	-	Walking 24.5503779446m at 41.6667m/s, will take approx 0.589208599305s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 423.687333382
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109423 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "FDNY Firehouse Engine 6, Lower":
+INFO:root:(TRAVEL)	-	Walking 117.58856427m at 41.6667m/s, will take approx 2.82212328478s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 306.541267851
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109373 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 82.823477768m at 41.6667m/s, will take approx 1.98776187622s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 30, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 218 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 218 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Twin Towers Sculpture":
+INFO:root:(TRAVEL)	-	Walking 7.73873332106m at 41.6667m/s, will take approx 0.185729451122s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 230.490149185
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1109113 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 96.5779194318m at 41.6667m/s, will take approx 2.31786821207s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 29, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 325 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 325 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Pace University":
+INFO:root:(TRAVEL)	-	Walking 14.8963601988m at 41.6667m/s, will take approx 0.357512358762s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 100
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 283.747100882
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1108803 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 27.8488937068m at 41.6667m/s, will take approx 0.668372914266s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 41 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 41 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Heaven and Earth, by Chaim Gro":
+INFO:root:(TRAVEL)	-	Walking 12.4742373981m at 41.6667m/s, will take approx 0.29938145805s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 303.855623872
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1108543 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Heaven and Earth":
+INFO:root:(TRAVEL)	-	Walking 119.655182169m at 41.6667m/s, will take approx 2.87172207467s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 196.577945468
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1108493 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: LICKITUNG, pokemon_id: SHELLDER
+INFO:root:(ENCOUNTER)	-	Catching LICKITUNG:
+INFO:root:(TRAVEL)	-	Walking 86.9313652329m at 41.6667m/s, will take approx 2.08635109651s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a RAZZ_BERRY
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 12
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught LICKITUNG with 844 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: LICKITUNG 213 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Catching SHELLDER:
+INFO:root:(TRAVEL)	-	Walking 50.695236474m at 41.6667m/s, will take approx 1.21668470203s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 26, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught SHELLDER with 230 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: SHELLDER 230 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Sugar House":
+INFO:root:(TRAVEL)	-	Walking 75.4878541901m at 41.6667m/s, will take approx 1.8117070512s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 189.118788354
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1108023 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: POLIWHIRL
+INFO:root:(ENCOUNTER)	-	Catching POLIWHIRL:
+INFO:root:(TRAVEL)	-	Walking 98.5454053717m at 41.6667m/s, will take approx 2.36508783685s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 27, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught POLIWHIRL with 91 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: POLIWHIRL 55 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Municipal Building":
+INFO:root:(TRAVEL)	-	Walking 49.9526031463m at 41.6667m/s, will take approx 1.19886151642s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 187.444412839
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1107763 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: NIDORAN_FEMALE
+INFO:root:(ENCOUNTER)	-	Catching NIDORAN_FEMALE:
+INFO:root:(TRAVEL)	-	Walking 61.1254700413m at 41.6667m/s, will take approx 1.46701010738s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 25, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught NIDORAN_FEMALE with 448 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: NIDORAN_FEMALE 448 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Catholic Church of St Andrew":
+INFO:root:(TRAVEL)	-	Walking 25.3859616519m at 41.6667m/s, will take approx 0.609262592235s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 264.383677581
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1107503 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Maria":
+INFO:root:(TRAVEL)	-	Walking 34.8558134517m at 41.6667m/s, will take approx 0.83653885361s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 299.1379037
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1107453 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "United States Court House":
+INFO:root:(TRAVEL)	-	Walking 73.2558149224m at 41.6667m/s, will take approx 1.75813815163s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 307.825899742
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1106903 Pokedex: 143/151 Party size: 145 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: JOLTEON 910 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Civic Center":
+INFO:root:(TRAVEL)	-	Walking 61.8779476291m at 41.6667m/s, will take approx 1.48506955504s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 246.040927628
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1106853 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "The African Burial Ground 1712-1794":
+INFO:root:(TRAVEL)	-	Walking 87.2606759345m at 41.6667m/s, will take approx 2.09425454702s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 273.073463319
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1106803 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Silent Struggle Weathering Wheel":
+INFO:root:(TRAVEL)	-	Walking 61.3952415096m at 41.6667m/s, will take approx 1.47348461744s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 100
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 324.514369376
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1106203 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: EXEGGCUTE
+INFO:root:(ENCOUNTER)	-	Catching EXEGGCUTE:
+INFO:root:(TRAVEL)	-	Walking 75.8875116731m at 41.6667m/s, will take approx 1.82129882311s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught EXEGGCUTE with 259 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: EXEGGCUTE 259 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Thomas Paine Park ":
+INFO:root:(TRAVEL)	-	Walking 10.929726855m at 41.6667m/s, will take approx 0.26231323467s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 390.845672472
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105943 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: WEEDLE
+INFO:root:(ENCOUNTER)	-	Catching WEEDLE:
+INFO:root:(TRAVEL)	-	Walking 88.1129925981m at 41.6667m/s, will take approx 2.11471013059s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 27, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught WEEDLE with 10 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: WEEDLE 10 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Art International Radio":
+INFO:root:(TRAVEL)	-	Walking 24.548747859m at 41.6667m/s, will take approx 0.589169477281s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 459.165079709
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105683 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Twisted Face":
+INFO:root:(TRAVEL)	-	Walking 58.6830316074m at 41.6667m/s, will take approx 1.40839163186s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 517.253816531
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105633 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: RATTATA
+INFO:root:(ENCOUNTER)	-	Catching RATTATA:
+INFO:root:(TRAVEL)	-	Walking 70.0751931325m at 41.6667m/s, will take approx 1.68180328974s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a RAZZ_BERRY
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 12
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught RATTATA with 413 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: RATTATA 397 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Smallest Museum in Manhattan":
+INFO:root:(TRAVEL)	-	Walking 12.7658386438m at 41.6667m/s, will take approx 0.306379882347s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 574.832438939
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105373 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: WEEDLE
+INFO:root:(ENCOUNTER)	-	Catching WEEDLE:
+INFO:root:(TRAVEL)	-	Walking 92.1147380354m at 41.6667m/s, will take approx 2.21075194425s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 0, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a GREAT_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught WEEDLE with 53 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: WEEDLE 53 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Spray Can Ball":
+INFO:root:(TRAVEL)	-	Walking 23.189991435m at 41.6667m/s, will take approx 0.556559349192s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 595.504631341
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105113 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Batman Protecting Gotham":
+INFO:root:(TRAVEL)	-	Walking 48.881379589m at 41.6667m/s, will take approx 1.17315217161s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 611.578315303
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105063 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Roman Mummy West":
+INFO:root:(TRAVEL)	-	Walking 82.5989429832m at 41.6667m/s, will take approx 1.9823730457s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 554.023389893
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1105013 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Constitution Works":
+INFO:root:(TRAVEL)	-	Walking 81.9603538334m at 41.6667m/s, will take approx 1.96704691836s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 1 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 510.650951235
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104963 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+INFO:root:(TRAVEL)	-	Walking 96.2585030794m at 41.6667m/s, will take approx 2.31020222574s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-501892-Kb6vJyGO72cIdmcC2sTk-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 589.48438671
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104963 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY, pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+INFO:root:(TRAVEL)	-	Walking 45.0454592745m at 41.6667m/s, will take approx 1.08109015772s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-503691-4IiQeZXxtcHZctQVMjl9-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 633.976504627
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104963 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Asian Man South Mural":
+INFO:root:(TRAVEL)	-	Walking 15.4582362239m at 41.6667m/s, will take approx 0.370997372577s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 631.93247085
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY, pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+INFO:root:(TRAVEL)	-	Walking 15.4582362239m at 41.6667m/s, will take approx 0.370997372577s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-551362-WTvtypdKCLlbt3dbETII-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 633.976504627
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY, pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-553101-Fz3K59kTumynffErATEf-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 633.976504627
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY, pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-504072-c4ksaYqQx1MS9INVlqRf-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 633.976504627
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY, pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-553569-CJdsKvN5OSoKSaAA9Kjl-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 633.976504627
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: PIDGEY, pokemon_id: PIDGEY
+INFO:root:(ENCOUNTER)	-	Catching PIDGEY:
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-505416-t4FpxswuCOGScf1WgQcW-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:Logger set up
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-554797-FjvkMGelcav6Es3xzt4v-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+INFO:root:Coordinates: 40.7127837 -74.0059413 0.0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 0.0
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 144 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: PINSIR 1617 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: FLAREON 1581 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: DRAGONITE 1852 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 41.213307165m at 41.6667m/s, will take approx 0.989118580664s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-554244-mIatk5TcglLkXVDZdXJH-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 41.213307165
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 141 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT, pokemon_id: GOLDEEN, pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-554562-V2QlOOgtjfh5MmzJZsBL-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:Logger set up
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-553630-bgLt5DWAPAThJCbyR1LK-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+INFO:root:Coordinates: 40.7127837 -74.0059413 0.0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 0.0
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 141 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 41.213307165m at 41.6667m/s, will take approx 0.989118580664s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:chances: [0.2829318046569824, 0.39278751611709595, 0.4858132004737854]
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-554608-j5iNrej9vbozXpsjF62M-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 41.213307165
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 141 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT, pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:chances: [0.2829318046569824, 0.39278751611709595, 0.4858132004737854]
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+CRITICAL:root:Exception raised: list index out of range
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 102
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-507369-DvkZT33NAZJbX4VgaDFc-sso.pokemon.com HTTP/1.1" 500 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:Logger set up
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-507347-ZL7gJ3qhzzRY05jVHHDz-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+INFO:root:Coordinates: 40.7127837 -74.0059413 0.0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 0.0
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1104913 Pokedex: 143/151 Party size: 141 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 41.213307165m at 41.6667m/s, will take approx 0.989118580664s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:root:chances: [0.2829318046569824, 0.39278751611709595, 0.4858132004737854]
+DEBUG:root:balls: [1, 2, 3]
+DEBUG:root:bag: {1: 30, 2: 28, 3: 1, 101: 0, 102: 0, 103: 0, 104: 0, 201: 0, 202: 0, 301: 4, 401: 4, 501: 4, 902: 0, 701: 50, 901: 1}
+INFO:root:(ENCOUNTER)	-	Using a RAZZ_BERRY
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 12
+INFO:root:(ENCOUNTER)	-	Using a ULTRA_BALL
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ENCOUNTER)	-	Caught ZUBAT with 449 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 15523855006332133751
+  pokemon_id: DRAGONAIR
+  cp: 1376
+  stamina: 97
+  stamina_max: 97
+  move_1: DRAGON_BREATH_FAST
+  move_2: AQUA_TAIL
+  height_m: 3.70997047424
+  weight_kg: 0.994229793549
+  individual_attack: 15
+  individual_defense: 1
+  individual_stamina: 13
+  cp_multiplier: 0.719399094582
+  pokeball: ITEM_ULTRA_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469719920066
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 542738348497965198
+  pokemon_id: ARBOK
+  cp: 948
+  stamina: 78
+  stamina_max: 78
+  move_1: ACID_FAST
+  move_2: SLUDGE_WAVE
+  height_m: 3.34032511711
+  weight_kg: 9.13247585297
+  individual_attack: 7
+  individual_defense: 14
+  individual_stamina: 11
+  cp_multiplier: 0.597400009632
+  pokeball: ITEM_POKE_BALL
+  captured_cell_id: 9279927616452689920
+  creation_time_ms: 1469573660565
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 1116945623607287444
+  pokemon_id: GLOOM
+  cp: 941
+  stamina: 77
+  stamina_max: 77
+  move_1: ACID_FAST
+  move_2: SLUDGE_BOMB
+  height_m: 0.712270379066
+  weight_kg: 3.0715341568
+  individual_attack: 15
+  individual_defense: 13
+  individual_stamina: 10
+  cp_multiplier: 0.597400009632
+  pokeball: ITEM_POKE_BALL
+  captured_cell_id: 9279927206743638016
+  creation_time_ms: 1469567272698
+  from_fort: 1
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 7109945483251323256
+  pokemon_id: PIDGEOT
+  cp: 1178
+  stamina: 108
+  stamina_max: 108
+  move_1: STEEL_WING_FAST
+  move_2: AERIAL_ACE
+  height_m: 1.30793452263
+  weight_kg: 1.28017234802
+  individual_attack: 14
+  individual_defense: 12
+  individual_stamina: 15
+  cp_multiplier: 0.597400009632
+  pokeball: ITEM_POKE_BALL
+  captured_cell_id: 7715420875791532032
+  creation_time_ms: 1469539867303
+  from_fort: 1
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 15519633552679399562
+  pokemon_id: PIDGEOTTO
+  cp: 833
+  stamina: 86
+  stamina_max: 86
+  move_1: STEEL_WING_FAST
+  move_2: AIR_CUTTER
+  height_m: 1.09331488609
+  weight_kg: 30.0
+  individual_attack: 14
+  individual_defense: 15
+  individual_stamina: 4
+  cp_multiplier: 0.667934000492
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469720626779
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 9036057483194116759
+  pokemon_id: GRAVELER
+  cp: 1034
+  stamina: 81
+  stamina_max: 81
+  move_1: ROCK_THROW_FAST
+  move_2: STONE_EDGE
+  height_m: 1.19255542755
+  weight_kg: 41.7828521729
+  individual_attack: 15
+  individual_defense: 12
+  individual_stamina: 10
+  cp_multiplier: 0.68116492033
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 7715421526173941760
+  creation_time_ms: 1469403310791
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 8059874958955010102
+  pokemon_id: NIDOKING
+  cp: 248
+  stamina: 42
+  stamina_max: 42
+  move_1: FURY_CUTTER_FAST
+  move_2: MEGAHORN
+  height_m: 1.49197256565
+  weight_kg: 62.0
+  individual_attack: 13
+  individual_defense: 14
+  individual_stamina: 5
+  cp_multiplier: 0.255720049143
+  pokeball: ITEM_POKE_BALL
+  captured_cell_id: 7715421526173941760
+  creation_time_ms: 1469378615892
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 14486504055276477703
+  pokemon_id: KINGLER
+  cp: 1125
+  stamina: 79
+  stamina_max: 79
+  move_1: MUD_SHOT_FAST
+  move_2: VICE_GRIP
+  height_m: 1.30010867119
+  weight_kg: 12.7958889008
+  individual_attack: 12
+  individual_stamina: 14
+  cp_multiplier: 0.640652954578
+  pokeball: ITEM_ULTRA_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469719370240
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 8917522989905642019
+  pokemon_id: BUTTERFREE
+  cp: 941
+  stamina: 91
+  stamina_max: 91
+  move_1: BUG_BITE_FAST
+  move_2: BUG_BUZZ
+  height_m: 1.01410388947
+  weight_kg: 4.85531902313
+  individual_attack: 1
+  individual_defense: 1
+  individual_stamina: 15
+  cp_multiplier: 0.68116492033
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469720097048
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 9129450684424944049
+  pokemon_id: NIDORINA
+  cp: 760
+  stamina: 93
+  stamina_max: 93
+  move_1: POISON_STING_FAST
+  move_2: SLUDGE_BOMB
+  height_m: 0.867927491665
+  weight_kg: 9.82367897034
+  individual_attack: 2
+  individual_defense: 15
+  individual_stamina: 12
+  cp_multiplier: 0.612157285213
+  pokeball: ITEM_ULTRA_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469720301000
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 12453954475754753583
+  pokemon_id: KAKUNA
+  cp: 284
+  stamina: 66
+  stamina_max: 66
+  move_1: POISON_STING_FAST
+  move_2: STRUGGLE
+  height_m: 0.576426565647
+  weight_kg: 2.99125766754
+  individual_attack: 2
+  individual_defense: 2
+  individual_stamina: 4
+  cp_multiplier: 0.706884205341
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469720405678
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 2456940700004975546
+  pokemon_id: NIDORINO
+  cp: 835
+  stamina: 87
+  stamina_max: 87
+  move_1: POISON_JAB_FAST
+  move_2: SLUDGE_BOMB
+  height_m: 0.898238956928
+  weight_kg: 6.92029953003
+  individual_attack: 3
+  individual_defense: 8
+  individual_stamina: 11
+  cp_multiplier: 0.654435634613
+  pokeball: ITEM_ULTRA_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469719514617
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 17569222999632701112
+  pokemon_id: VENOMOTH
+  cp: 83
+  stamina: 25
+  stamina_max: 25
+  move_1: CONFUSION_FAST
+  move_2: PSYCHIC
+  height_m: 1.62013602257
+  weight_kg: 34.0919303894
+  individual_attack: 15
+  individual_defense: 14
+  individual_stamina: 13
+  cp_multiplier: 0.166397869587
+  pokeball: ITEM_POKE_BALL
+  captured_cell_id: 9926594385212866560
+  creation_time_ms: 1469605259486
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 5057426252612554377
+  pokemon_id: VILEPLUME
+  cp: 1682
+  stamina: 104
+  stamina_max: 104
+  move_1: RAZOR_LEAF_FAST
+  move_2: PETAL_BLIZZARD
+  height_m: 1.32696199417
+  weight_kg: 14.33710289
+  individual_attack: 13
+  individual_defense: 6
+  individual_stamina: 7
+  cp_multiplier: 0.667934000492
+  pokeball: ITEM_ULTRA_BALL
+  captured_cell_id: 7715421526173941760
+  creation_time_ms: 1469503914373
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 11462451258815905357
+  pokemon_id: NIDOQUEEN
+  cp: 453
+  stamina: 68
+  stamina_max: 68
+  move_1: BITE_FAST
+  move_2: STONE_EDGE
+  height_m: 0.956095933914
+  weight_kg: 60.0
+  individual_attack: 2
+  individual_defense: 15
+  individual_stamina: 15
+  cp_multiplier: 0.349212676287
+  pokeball: ITEM_POKE_BALL
+  captured_cell_id: 7715421526173941760
+  creation_time_ms: 1469403181921
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 3308259355304340811
+  pokemon_id: POLIWRATH
+  cp: 175
+  stamina: 40
+  stamina_max: 40
+  move_1: BUBBLE_FAST
+  move_2: HYDRO_PUMP
+  height_m: 1.52034235001
+  weight_kg: 18.1111087799
+  individual_attack: 14
+  individual_defense: 2
+  individual_stamina: 6
+  cp_multiplier: 0.215732470155
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469757187559
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_INSUFFICIENT_RESOURCES
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 10725807823497108493
+  pokemon_id: SEADRA
+  cp: 1393
+  stamina: 89
+  stamina_max: 89
+  move_1: WATER_GUN_FAST
+  move_2: BLIZZARD
+  height_m: 1.1162917614
+  weight_kg: 8.05332946777
+  individual_attack: 15
+  individual_defense: 9
+  individual_stamina: 15
+  cp_multiplier: 0.719399094582
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 9926594385212866560
+  creation_time_ms: 1469614474863
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 4165432775110475096
+  pokemon_id: FEAROW
+  cp: 1260
+  stamina: 97
+  stamina_max: 97
+  move_1: STEEL_WING_FAST
+  move_2: DRILL_RUN
+  height_m: 1.08468747139
+  weight_kg: 3.13017320633
+  individual_attack: 9
+  individual_defense: 10
+  individual_stamina: 10
+  cp_multiplier: 0.694143652916
+  pokeball: ITEM_ULTRA_BALL
+  captured_cell_id: 9926596584236122112
+  creation_time_ms: 1469718962344
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: SUCCESS
+evolved_pokemon_data {
+  id: 17781702010311362318
+  pokemon_id: VICTREEBEL
+  cp: 897
+  stamina: 79
+  stamina_max: 79
+  move_1: ACID_FAST
+  move_2: SOLAR_BEAM
+  height_m: 1.85442316532
+  weight_kg: 7.58761501312
+  individual_attack: 11
+  individual_defense: 15
+  individual_stamina: 5
+  cp_multiplier: 0.481684952974
+  pokeball: ITEM_GREAT_BALL
+  captured_cell_id: 9926594385212866560
+  creation_time_ms: 1469676702481
+}
+experience_awarded: 500
+candy_awarded: 1
+
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:result: FAILED_POKEMON_CANNOT_EVOLVE
+
+DEBUG:root:Logger set up
+INFO:root:Creating PTC session for swarley77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): sso.pokemon.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 103
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+DEBUG:requests.packages.urllib3.connectionpool:"GET /sso/oauth2.0/callbackAuthorize?ticket=ST-560190-3OaKp4pbHiMygvvtpeQ6-sso.pokemon.com HTTP/1.1" 500 5329
+DEBUG:requests.packages.urllib3.connectionpool:"POST /sso/oauth2.0/accessToken HTTP/1.1" 200 104
+INFO:root:Coordinates: 40.7127837 -74.0059413 0.0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/rpc HTTP/1.1" 200 142
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(TRAVEL)	-	Distance from start: 0.0
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1095103 Pokedex: 143/151 Party size: 142 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+INFO:root:(POKEMANAGE)	-	Releasing: BUTTERFREE 815 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: KAKUNA 110 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: PIDGEOT 1178 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: FEAROW 536 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: ARBOK 948 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: NIDOQUEEN 453 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: NIDOKING 248 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: ZUBAT 389 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: VILEPLUME 239 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: VENOMOTH 83 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: POLIWRATH 175 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: VICTREEBEL 897 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: GRAVELER 394 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: KINGLER 1125 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: SEADRA 1252 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKEMANAGE)	-	Releasing: DRAGONAIR 1045 CP
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "New York City Hall Sign Inside Park":
+INFO:root:(TRAVEL)	-	Walking 47.7023379101m at 41.6667m/s, will take approx 1.14485519396s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 100
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 3 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 47.7023379101
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1095003 Pokedex: 143/151 Party size: 126 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	Spinning the Fort "Jane Addams":
+INFO:root:(TRAVEL)	-	Walking 76.3911005878m at 41.6667m/s, will take approx 1.8333849474s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(POKESTOP)	-	XP: 50
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(ITEM MANAGE)	-	Cleaned out Inventory, 2 items recycled.
+INFO:root:(TRAVEL)	-	Distance from start: 122.996644928
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:(PROFILE)	-	Handkfibejeldd Level:34 XP to next: 1094953 Pokedex: 143/151 Party size: 126 Strongest: DRAGONITE 2310 CP
+INFO:root:(POKEMANAGE)	-	Cleaning out Pokes...
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+INFO:root:THESE POKES SUCK A MASSIVE DICK: pokemon_id: ZUBAT, pokemon_id: NIDORAN_FEMALE
+INFO:root:(ENCOUNTER)	-	Catching ZUBAT:
+INFO:root:(TRAVEL)	-	Walking 92.0696888986m at 41.6667m/s, will take approx 2.20967076583s
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
+DEBUG:requests.packages.urllib3.connectionpool:"POST /plfe/571/rpc HTTP/1.1" 200 None
