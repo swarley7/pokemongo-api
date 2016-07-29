@@ -419,10 +419,7 @@ def camBot(session):
                     elif coutn >13:
                         time.sleep(5)
                         break
-                fort = findClosestFort(session)
-                if fort:
-                    walkAndSpin(session, fort, speed)
-                    cleanInventory(session)
+                grab_some_fkn_pokeballz(session)
             else:
                 grab_some_fkn_pokeballz(session)
 
