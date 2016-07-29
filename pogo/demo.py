@@ -235,6 +235,7 @@ def walkAndSpinMany(session, forts):
 # A very brute force approach to evolving
 def evolveAllPokemon(session):
     inventory = session.checkInventory()
+    logging.info("Evolving all your pokes... hope you don't mind")
     for pokemon in inventory.party:
         poke_status = session.evolvePokemon(pokemon)
         logging.debug("EVOLVED SOME ASSHOLE: {}".format(poke_status))
