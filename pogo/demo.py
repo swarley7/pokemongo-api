@@ -388,7 +388,8 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
 #cam bot :D
 
 def grab_some_fkn_pokeballz(session):
-
+    pass
+    
 def camBot(session):
     startlat, startlon, startalt = session.getCoordinates()
     cooldown = 10
