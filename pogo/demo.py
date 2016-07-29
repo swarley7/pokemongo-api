@@ -357,7 +357,7 @@ def safe_catch(pokies, session, speed): # NOT CAMEL CASE COZ PEP8 U FUCKERS
     epicpokes = []
     shitpokes = []
     for pokemon in pokies:
-        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 3: #if rare pokemanzzzz
+        if pokedex.getRarityById(pokemon.pokemon_data.pokemon_id) >= 4: #if rare pokemanzzzz
             epicpokes.append(pokemon)
         else:
             shitpokes.append(pokemon)
